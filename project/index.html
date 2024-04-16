@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase.com</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="bg-blue-400 mx-auto p-5">
+    <div class="md:flex md:flex-row md:justify-between text-center text-sm sm:text-base">
+      <div class="flex flex-row justify-center">
+        <div class="bg-gradient-to-r from-purple-400 to-red-400 w-10 h-10 rounded-lg "></div>
+        <h1 class="text-3xl text-black-400 ml-2">ShopEase</h1>
+      </div>
+      <div class="mt-2">
+        <a href="#Home" class="text-black-500 hover:text-purple-600 p-4 px-3 sm:px-4">Home</a>
+        <a href="#Shop" class="text-black-500 hover:text-purple-600 p-4 px-3 sm:px-4">Shop</a>
+        <a href="#Blog" class="text-black-500 hover:text-purple-600 p-4 px-3 sm:px-4">Blog</a>
+        <a href="#Contact" class="text-black-500 hover:text-purple-600 p-4 px-3 sm:px-4">Contact</a>
+        <input placeholder="Search...">
+        <a href="#"
+          class="bg-purple-600 text-gray-50 hover:bg-gradient-to-r from-purple-400 to-red-400 p-2 px-2 sm:px-4 rounded-full ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-5 inline-block" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Cart (0)
+        </a>&nbsp;
+        <button
+          class="bg-blue-500 hover:bg-gradient-to-r from-purple-400 to-green-400 text-white font-bold py-2 px-4 rounded-full">
+
+          <a href="Sign in.html" c target="_blank" class="underline">Sign in</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <marquee behavior="slide" direction=" left to right" onmouseover="this.stop()" onmouseleave="this.start() "
+    class="bg-blue-200 to red-100 text-orange-400"> 40% Off
+    Sale Sale Discount </marquee>
+  <div class="Home" id="Home">
+    <img src="image/a1.jpg" alt="Sales">
+  </div>
+  <!-- Hero sectioin -->
+
+  <div class="my-20" class="Shop" id="Shop">
+    <div class="flex flex-row justify-between my-5 ml-8 ">
+      <h2 class="text-3xl">Men's Collection</h2>
+      <a href="#" class="flex flex-row text-lg hover:text-purple-700">
+        View All
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+    <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 ml-8">
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="./image/men1.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6 " />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Mens T-Shirt</a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="./image/men 2.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Rough jeans</a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 2.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="./image/m3.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Nike Shoes</a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 3.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="image/men 4.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Wrist Watch </a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 4.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Men's Collection Section -->
+
+
+  <div class="my-20">
+    <div class="flex flex-row justify-between my-5 ml-8">
+      <h2 class="text-3xl">Women's Collection</h2>
+      <a href="#" class="flex flex-row text-lg hover:text-purple-700">
+        View All
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+    <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 ml-8">
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="./image/w1.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Women Stylish Necklash</a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 5.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="image/w2.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Printed Women Dress</a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 6.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="image/w3.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Blue Women Denim </a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 7.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg">
+        <a href="#">
+          <img src="image/w5.jpg" class="rounded-tl-lg rounded-tr-lg hover:opacity-[0.8] hover:translate-y-6" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Women Skirt </a></h3>
+          <div class="flex flex-row my-3">
+            <div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+            <div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+          </div>
+          <div class="flex flex-row my-3">
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">XXL</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">L</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">M</a>
+            <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
+          </div>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <button
+              class="bg-gradient-to-r from-red-600 to-blue-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <a href="details copy 8.html" c target="_blank" class="underline">View Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+    
+      <h1 class="text-3xl bg-red-800 text-center" class="Blog" id="Blog"> ShopEase Blog</h1>
+    
+
+    <main class="px-8 bg-blue-500">
+      <article class="mb-8">
+        <h2 class="text-2xl font-bold mb-2"> Exploring the Ultimate Convenience: The Rise of Shopping Websites</h2>
+        <p class="text-gray-700">In the bustling world we live in, time is a precious commodity. With hectic
+          schedules and endless to-do lists, the convenience of shopping from the comfort of our homes has become
+          more appealing than ever. Enter shopping websites – the virtual marketplace that has revolutionized the
+          way we shop. In this blog, we'll delve into the phenomenon of shopping websites, exploring their
+          benefits, evolution, and impact on the retail landscape.
+
+          The Convenience Factor
+          Gone are the days of navigating through crowded malls or waiting in long queues at checkout counters.
+          Shopping websites offer unparalleled convenience, allowing consumers to browse, select, and purchase
+          products with just a few clicks. Whether it's groceries, clothing, electronics, or home decor, the
+          virtual shelves of these websites are stocked with a vast array of items, catering to every need and
+          preference.</p>
+      </article>
+
+      <article class="mb-8">
+        <h2 class="text-2xl font-bold mb-2">The Future of Retail</h2>
+        <p class="text-gray-700">
+          As technology continues to advance and consumer behaviors evolve, the future of retail looks increasingly
+          digital. Shopping websites are poised to play a central role in this transformation, serving as the primary
+          gateway for consumers to access goods and services. From augmented reality fitting rooms to AI-powered
+          shopping assistants, the possibilities for innovation in the e-commerce space are endless.
+
+          However, amidst all the technological advancements, one thing remains constant – the focus on customer
+          satisfaction. Shopping websites that prioritize user experience, reliability, and trust will continue to
+          thrive in an increasingly competitive market. After all, in the digital age, convenience is king, and shopping
+          websites are at the forefront of delivering it.
+
+          In conclusion, shopping websites have become an integral part of our lives, offering unparalleled convenience,
+          choice, and empowerment to consumers. As they continue to evolve and innovate, they will shape the future of
+          retail, redefining the way we shop and interact with brands. So, the next time you're in need of a shopping
+          fix, why not embrace the convenience of a shopping website? After all, the world is just a click away.
+
+
+        </p>
+      </article>
+    </main>
+
+  </div>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="bg-blue-500 text-black-500 py-8 px-4 text-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="Contact" id="Contact">
+        <h3 class="text-lg font-bold mb-2">Company</h3>
+        <ul class="list-none">
+          <li><a href="#" class="text-black-400 hover:underline">About Us</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Careers</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-2">Legal</h3>
+        <ul class="list-none">
+          <li><a href="#" class="text-Black-400 hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Terms of Service</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-2">Resources</h3>
+        <ul class="list-none">
+          <li><a href="#" class="text-Black-400 hover:underline">Documentation</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Blog</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+        <ul class="list-none">
+          <li><a href="#" class="text-Black-400 hover:underline">Twitter</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Facebook</a></li>
+          <li><a href="#" class="text-Black-400 hover:underline">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-2 text-center ">Contact Us</h3>
+        <ul class="list-none">
+          <li><a href="#Phone No" class="text-black-600 hover:underline">8547691235</a></li>
+          <li><a href="# Email.com" class="text-black-600 hover:underline">ShopEase8547@gmail.com</a></li>
+        </ul>
+      </div>
+    </div><br>
+    <hr class="">
+
+    <div class="flex gap-2 text-black  justify-between">
+      <div class="flex gap-2">
+        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+          alt=" Become a seller">
+        <a href="">Become a seller</a>
+      </div>
+      <div class="flex gap-2">
+        <img
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+          alt="">
+        <a href="">Advertisement</a>
+      </div>
+      <div class="flex gap-2">
+        <img
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+          alt="">
+        <a href="">Gift Cards</a>
+      </div>
+      <div class="flex gap-2">
+        <img
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+          alt="">
+        <a href="">Help Center</a>
+      </div>
+      <span class="ShopEase flex gap-2">© 2021-2024
+        <span class="flex gap-8">ShopEase.com</span>
+      </span>
+      <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+        alt="">
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
